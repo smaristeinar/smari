@@ -3,16 +3,16 @@ collections:
         output: true
 defaults:
   - scope:
-      path: ""
+      path: "/smari"
       type: "authors"
     values:
       layout: "author"
   - scope:
-      path: ""
+      path: "/smari"
       type: "posts"
     values:
       layout: "post"
   - scope:
-      path: ""
+      path: "/smari"
     values:
       layout: "default"

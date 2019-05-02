@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="font" href="/assets/fonts/icomoon.ttf">
+  </head>
+  <body class="slideLeft" onclick= "myAudioFunction('a')">
+    <div class="socialbar">
+          <a href="https://www.knifecenter.com/">
+        <div class="a1"><span class="icon-eyedropper"></span></div>
+         </a>
+         <a href="http://www.deathclock.com/">
+        <div class="a1"><span class="icon-droplet"></span></div>
+        </a>
+        <a href="https://www.guns.com/">
+        <div class="a1"><span class="icon-target" ></span></div>
+        </a>
+   </div>
+    <div class="background">
+      {% include navigation.html %}
+      <div class="content">
+      {{ content }}
+      </div>
+      <div class="tree">
+        <div class="tremynd">
+        <img class="tremynd" src="/assets/img/tree.png" alt="">
+        </div>
+        <div class="auglysing">
+          <a href="/gunslogin.html">
+          <div class="auglysinguppi">
+            <img class="logo2" src="/assets/img/logo2.svg" alt="">
+          </div>
+          <div class="auglysingniðri">
+            <h1 class="augtexti">MARKETPLACE</h1>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+       var aAudio = new Audio('/assets/audio/a.mp3');
+       var bAudio = new audio('/assets/audio/b.mp3')
+       function myAudioFunction(letter) {
+           if(letter == 'a') {
+               aAudio.play();s
+           }
+           else if(letter == 'b') {
+               bAudio.play();s
+          }
+       }
+   </script>
+</html>

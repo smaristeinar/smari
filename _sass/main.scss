@@ -1,3 +1,8 @@
+/*
+font-family: 'New Rocker', cursive;
+font-family: 'Reem Kufi', sans-serif;
+*/
+
 body{
   margin: 0px;
   padding: 0px;
@@ -14,35 +19,73 @@ body{
   display: grid;
   padding-left: auto;
   padding-right: auto;
-  background-color: red;
-
   grid-template-areas:
-  "nav content content";
+  "banner"
+  "middle"
+  "footer";
 }
 
 
 .banner{
   grid-area:banner;
   text-align: center;
-  background-color: purple;
+  background-color: black;
 }
+
+.middle{
+  display: grid;
+  grid-area: middle;
+  grid-template-areas: "nav content content content"
+}
+
 
 .navgrid{
    grid-area: nav;
-   background-color: blue;
-   width: 200px;
+   background-color: #660000;
+   width: 300px;
 
 
 }
 .navdiv{
+  text-align: center;
   width: 200px;
   display: grid;
   padding: 10px;
   font-size: 30px;
   grid-row: 1fr 1fr 1fr 1fr;
 }
-
+.takkar{
+  font-family: 'New Rocker', cursive;
+  color:black;
+  text-decoration: none;
+  padding:30px;
+  font-size: 60px;
+}
 .content{
   grid-column-start: 1fr;
   grid-area: content;
+}
+.footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: black;
+}
+.footer-text{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #660000;
+  width: 840px;
+}
+.footer-text > p{
+  font-size: 20px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.footer-text > h1{
+  font-family: 'New Rocker', cursive;
+}
+
+.logo {
+  background-color: #660000;
+  width: 840px;
 }

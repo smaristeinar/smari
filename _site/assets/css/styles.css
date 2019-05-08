@@ -8,11 +8,11 @@ body {
   text-decoration: none;
   user-select: none;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-image: url("/assets/img/veggur.jpg"); }
 
 .background {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 70px;
   display: grid;
   padding-left: auto;
   padding-right: auto;
@@ -24,9 +24,8 @@ body {
   background-color: black; }
 
 .middle {
-  display: grid;
-  grid-area: middle;
-  grid-template-areas: "nav content content content"; }
+  display: flex;
+  flex-flow: row; }
 
 .navgrid {
   grid-area: nav;
@@ -49,8 +48,10 @@ body {
   font-size: 60px; }
 
 .content {
-  grid-column-start: 1fr;
-  grid-area: content; }
+  flex-grow: 2;
+  grid-area: content;
+  background-color: #660000;
+  border: 40px solid black; }
 
 .footer {
   grid-area: footer;
